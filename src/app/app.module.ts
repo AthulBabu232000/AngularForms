@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import {Router, Routes,RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes:Routes=[
   {path:'',component:FormsComponent},
@@ -19,7 +20,8 @@ const routes:Routes=[
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
