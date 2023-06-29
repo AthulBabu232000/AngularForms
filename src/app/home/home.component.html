@@ -1,0 +1,20 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+     <div class="sidenav-content-innercontainer">
+        <h1>Welcome to my Portfolio</h1>
+        <button type="button"class="button" mat-button (click)="drawer.toggle()">
+          <img class="img-personal"src="https://media.licdn.com/dms/image/C5603AQFVpVKj4jGMfA/profile-displayphoto-shrink_800_800/0/1661768660599?e=2147483647&v=beta&t=FqhUvfqi2cJV2btM3XjXTVN_mvFfmmDAPQn2-iKGZnM" alt="" srcset="">
+        </button>
+     </div>
+    </div>
+  
+  </mat-drawer-container>
+  

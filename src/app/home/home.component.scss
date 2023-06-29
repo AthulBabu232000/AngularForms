@@ -1,0 +1,40 @@
+.container {
+    width: 100vw;
+    min-height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding:0;
+    margin:0;
+
+.img-personal{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+  }
+
+  .sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+.button{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+  .sidenav {
+    padding: 20px;
+  }
+  .sidenav-content-innercontainer{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    background-color:orange;
+    align-items:center;
+  }

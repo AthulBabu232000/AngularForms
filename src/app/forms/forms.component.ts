@@ -9,6 +9,7 @@ export class FormsComponent implements OnInit {
 
   handleSubmit(myForm:any){
     console.log(myForm.value);
+    console.log(myForm.form.controls['email'].errors);
   }
   constructor() { }
 

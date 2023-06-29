@@ -1,0 +1,27 @@
+{{feedbackForm.value | json}}
+<form #myForm [formGroup]="feedbackForm" class="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="half-width">
+        <mat-label>First Name</mat-label>
+        <input matInput type="text" formControlName="firstname">
+        <mat-error *ngIf="feedbackForm.get('firstname')?.hasError('required')&&feedbackForm.get('firstname')?.touched">First Name is required</mat-error>
+      </mat-form-field>
+      <mat-form-field class="half-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" formControlName="lastname">
+      </mat-form-field>
+      <mat-form-field class="half-width">
+        <mat-label>Phone Number</mat-label>
+        <input matInput type="number" formControlName="telnum">
+      </mat-form-field>
+      <mat-form-field class="half-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="half-width">
+        <mat-label>Message</mat-label>
+        <input matInput type="text" formControlName="message">
+      </mat-form-field>
+    <button mat-raised-button [disabled]="feedbackForm.invalid" type="submit">Submit</button>
+
+
+</form>
